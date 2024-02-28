@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     }
   }]],
   image: {
-    dir: 'assets/images'
+    dir: 'assets/images',
+    quality: 75
   },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css'
