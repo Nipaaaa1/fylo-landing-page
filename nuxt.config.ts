@@ -7,6 +7,9 @@ export default defineNuxtConfig({
       'Open Sans': [400, 700]
     }
   }]],
+  image: {
+    dir: 'assets/images'
+  },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css'
   }
