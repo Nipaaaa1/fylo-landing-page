@@ -5,7 +5,7 @@
 </template>
 
 <style>
-  :root {
-    font-size: 14px;
-  }
+:root {
+  font-size: 14px;
+}
 </style>

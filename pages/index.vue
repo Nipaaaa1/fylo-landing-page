@@ -1,52 +1,199 @@
+<script setup lang="ts">
+useHead({
+  title: "Fylo Landing Page",
+  htmlAttrs: {
+    lang: "en",
+  },
+  meta: [
+    {
+      name: "description",
+      content:
+        "Fylo is a File Sharing Services that let's you access your file from anywhere.",
+    },
+  ],
+});
+</script>
+
 <template>
-    <Navbar />
-    <main>
-        <Header />
-        <MainSection>
-            <ul class="flex flex-col gap-24">
-                <FeaturesCard>
-                    <FeaturesImage src="/icon-access-anywhere.svg" alt="" />
-                    <FeaturesTitle>Access your files, anywhere</FeaturesTitle>
-                    <FeaturesDescription>
-                        The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere
-                    </FeaturesDescription>
-                </FeaturesCard>
-                <FeaturesCard>
-                    <FeaturesImage src="/icon-security.svg" alt="" />
-                    <FeaturesTitle>Security you can trust</FeaturesTitle>
-                    <FeaturesDescription>
-                        2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.
-                    </FeaturesDescription>
-                </FeaturesCard>
-                <FeaturesCard>
-                    <FeaturesImage src="/icon-collaboration.svg" alt="" />
-                    <FeaturesTitle>Real-time collaboration</FeaturesTitle>
-                    <FeaturesDescription>
-                        Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
-                    </FeaturesDescription>
-                </FeaturesCard>
-                <FeaturesCard>
-                    <FeaturesImage src="/icon-any-file.svg" alt="" />
-                    <FeaturesTitle>Store any type of file</FeaturesTitle>
-                    <FeaturesDescription>
-                        Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.
-                    </FeaturesDescription>
-                </FeaturesCard>
-            </ul>
-        </MainSection>
-        <MainSection class="text-white gap-4">
-            <NuxtImg class="mb-8" src="/illustration-stay-productive.png" alt="People's holding chat messages illustration" />
-            <h2 class="font-raleway font-bold self-start text-xl tracking-wide">Stay productive, wherever you are</h2>
-            <p class="font-open-sans">
-                Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
-            </p>
-            <p class="font-open-sans">
-                Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
-            </p>
-            <button class="font-open-sans self-start text-accent-cyan flex gap-2 items-center border-b border-accent-cyan py-1">
-                See how Fylo works
-                <NuxtImg src="/icon-arrow.svg" alt="" />
-            </button>
-        </MainSection>
-    </main>
+  <Navbar />
+  <main>
+    <Header />
+    <MainSection>
+      <ul class="flex flex-col gap-24">
+        <FeatureCard>
+          <FeatureImage src="/icon-access-anywhere.svg" alt="" />
+          <FeatureTitle>Access your files, anywhere</FeatureTitle>
+          <FeatureDescription>
+            The ability to use a smartphone, tablet, or computer to access your
+            account means your files follow you everywhere
+          </FeatureDescription>
+        </FeatureCard>
+        <FeatureCard>
+          <FeatureImage src="/icon-security.svg" alt="" />
+          <FeatureTitle>Security you can trust</FeatureTitle>
+          <FeatureDescription>
+            2-factor authentication and user-controlled encryption are just a
+            couple of the security features we allow to help secure your files.
+          </FeatureDescription>
+        </FeatureCard>
+        <FeatureCard>
+          <FeatureImage src="/icon-collaboration.svg" alt="" />
+          <FeatureTitle>Real-time collaboration</FeatureTitle>
+          <FeatureDescription>
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
+          </FeatureDescription>
+        </FeatureCard>
+        <FeatureCard>
+          <FeatureImage src="/icon-any-file.svg" alt="" />
+          <FeatureTitle>Store any type of file</FeatureTitle>
+          <FeatureDescription>
+            Whether you're sharing holidays photos or work documents, Fylo has
+            you covered allowing for all file types to be securely stored and
+            shared.
+          </FeatureDescription>
+        </FeatureCard>
+      </ul>
+    </MainSection>
+    <MainSection class="gap-4 text-white">
+      <NuxtImg
+        loading="lazy"
+        class="mb-8 h-max w-full"
+        src="/illustration-stay-productive.png"
+        alt="People's holding chat messages illustration"
+      />
+      <h2 class="self-start font-raleway text-xl font-bold tracking-wide">
+        Stay productive, wherever you are
+      </h2>
+      <p class="font-open-sans">
+        Never let location be an issue when accessing your files. Fylo has you
+        covered for all of your file storage needs.
+      </p>
+      <p class="font-open-sans">
+        Securely share files and folders with friends, family and colleagues for
+        live collaboration. No email attachments required.
+      </p>
+      <button
+        class="flex items-center gap-2 self-start border-b border-accent-cyan py-1 font-open-sans text-accent-cyan"
+      >
+        See how Fylo works
+        <NuxtImg class="h-4 w-max" src="/icon-arrow.svg" alt="" />
+      </button>
+    </MainSection>
+    <MainSection class="px-14 pb-96 pt-28">
+      <NuxtImg
+        class="h-8 w-max translate-x-2 self-start"
+        src="/bg-quotes.png"
+        alt=""
+      />
+      <ul class="flex flex-col gap-10">
+        <TestimonialCard>
+          <TestimonialQuote>
+            Fylo has Improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </TestimonialQuote>
+          <TestimonialProfile
+            avatarImage="/profile-1.jpg"
+            avatarAlt="Satish Patel's"
+            name="Satish Patel"
+            occupation="Founder & CEO, Huddle"
+          />
+        </TestimonialCard>
+        <TestimonialCard>
+          <TestimonialQuote>
+            Fylo has Improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </TestimonialQuote>
+          <TestimonialProfile
+            avatarImage="/profile-2.jpg"
+            avatarAlt="Bruce McKenzie's"
+            name="Bruce McKenzie"
+            occupation="Founder & CEO, Huddle"
+          />
+        </TestimonialCard>
+        <TestimonialCard>
+          <TestimonialQuote>
+            Fylo has Improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </TestimonialQuote>
+          <TestimonialProfile
+            avatarImage="/profile-3.jpg"
+            avatarAlt="Iva Boyd's"
+            name="Iva Boyd"
+            occupation="Founder & CEO, Huddle"
+          />
+        </TestimonialCard>
+      </ul>
+    </MainSection>
+    <footer
+      class="w-full bg-primary-footer-dark-blue px-6 py-12 pt-0 text-white"
+    >
+      <div
+        class="flex w-full -translate-y-[10rem] flex-col items-center gap-4 rounded-lg bg-primary-main-dark-blue px-7 py-10 shadow-[1px_2px_14px_3px_rgba(0,0,0,0.3)]"
+      >
+        <h2 class="font-raleway text-lg font-bold tracking-wider">
+          Get early access today
+        </h2>
+        <p class="text-center font-open-sans">
+          It only takes a minute to sign up and our free tier is extremely
+          generous. If you have any questions, our support team would be happy
+          to help you.
+        </p>
+        <form class="flex w-full flex-col gap-4">
+          <label for="email">Email</label>
+          <input
+            class="w-full rounded-full py-4 placeholder:pl-8 placeholder:text-xs"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          />
+          <button
+            class="rounded-full bg-gradient-to-br from-accent-cyan to-accent-blue py-3"
+            type="submit"
+          >
+            Get Started For Free
+          </button>
+        </form>
+      </div>
+      <div class="-mt-14 flex flex-col gap-6">
+        <NuxtImg class="h-14 w-max" src="/logo.svg" alt="" />
+        <ul class="flex flex-col gap-4 p-6 *:pl-3">
+          <li class="list-image-[url(~/assets/images/icon-location.svg)]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+            possimus molestiae quas sequi voluptatum repellendus ipsa, minus
+            corporis cupiditate!
+          </li>
+          <li class="list-image-[url(~/assets/images/icon-phone.svg)]">
+            +1-543-123-4567
+          </li>
+          <li class="list-image-[url(~/assets/images/icon-email.svg)]">
+            example@fylo.com
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-12 pt-14 font-open-sans">
+        <ul class="flex flex-col gap-4 text-lg">
+          <li>About Us</li>
+          <li>Jobs</li>
+          <li>Press</li>
+          <li>Blog</li>
+        </ul>
+        <ul class="flex flex-col gap-4 text-lg">
+          <li>Contact Us</li>
+          <li>Terms</li>
+          <li>Privacy</li>
+        </ul>
+        <ul class="flex gap-4 self-center pt-10">
+          <li><IconsFacebook class="h-8 w-max rounded-full border p-1.5" /></li>
+          <li><IconsTwitter class="h-8 w-max rounded-full border p-1.5" /></li>
+          <li>
+            <IconsInstagram class="h-8 w-max rounded-full border p-1.5" />
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </main>
 </template>

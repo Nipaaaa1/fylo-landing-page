@@ -19,6 +19,9 @@ export default <Partial<Config>>{
           blue: "hsl(198, 60%, 50%)",
           "light-red": "hsl(0, 100%, 63%)"
         }
+      },
+      boxShadow: {
+        email: "1px 2px 6px 3px rgba(0,0,0,0.6)"
       }
     }
   }
