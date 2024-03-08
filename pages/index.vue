@@ -128,71 +128,75 @@ useHead({
         </TestimonialCard>
       </ul>
     </MainSection>
-    <footer
-      class="w-full bg-primary-footer-dark-blue px-6 py-12 pt-0 text-white"
-    >
-      <div
-        class="flex w-full -translate-y-[10rem] flex-col items-center gap-4 rounded-lg bg-primary-main-dark-blue px-7 py-10 shadow-[1px_2px_14px_3px_rgba(0,0,0,0.3)]"
-      >
-        <h2 class="font-raleway text-lg font-bold tracking-wider">
-          Get early access today
-        </h2>
-        <p class="text-center font-open-sans">
-          It only takes a minute to sign up and our free tier is extremely
-          generous. If you have any questions, our support team would be happy
-          to help you.
-        </p>
-        <form class="flex w-full flex-col gap-4">
-          <label for="email">Email</label>
-          <input
-            class="w-full rounded-full py-4 placeholder:pl-8 placeholder:text-xs"
-            type="email"
-            name="email"
-            placeholder="email@example.com"
-          />
-          <button
-            class="rounded-full bg-gradient-to-br from-accent-cyan to-accent-blue py-3"
-            type="submit"
-          >
-            Get Started For Free
-          </button>
-        </form>
-      </div>
-      <div class="-mt-14 flex flex-col gap-6">
-        <NuxtImg class="h-14 w-max" src="/logo.svg" alt="" />
-        <ul class="flex flex-col gap-4 p-6 *:pl-3">
-          <li class="list-image-[url(~/assets/images/icon-location.svg)]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
-            possimus molestiae quas sequi voluptatum repellendus ipsa, minus
-            corporis cupiditate!
-          </li>
-          <li class="list-image-[url(~/assets/images/icon-phone.svg)]">
-            +1-543-123-4567
-          </li>
-          <li class="list-image-[url(~/assets/images/icon-email.svg)]">
-            example@fylo.com
-          </li>
-        </ul>
-      </div>
-      <div class="flex flex-col gap-12 pt-14 font-open-sans">
-        <ul class="flex flex-col gap-4 text-lg">
-          <li>About Us</li>
-          <li>Jobs</li>
-          <li>Press</li>
-          <li>Blog</li>
-        </ul>
-        <ul class="flex flex-col gap-4 text-lg">
-          <li>Contact Us</li>
-          <li>Terms</li>
-          <li>Privacy</li>
-        </ul>
-        <ul class="flex gap-4 self-center pt-10">
-          <li><IconsFacebook class="h-8 w-max rounded-full border p-1.5" /></li>
-          <li><IconsTwitter class="h-8 w-max rounded-full border p-1.5" /></li>
-          <li>
-            <IconsInstagram class="h-8 w-max rounded-full border p-1.5" />
-          </li>
-        </ul>
+    <footer class="w-full bg-primary-footer-dark-blue">
+      <div class="container mx-auto px-6 py-12 pt-0 text-white">
+        <div
+          class="flex w-full -translate-y-[10rem] flex-col items-center gap-4 rounded-lg bg-primary-main-dark-blue px-7 py-10 shadow-[1px_2px_14px_3px_rgba(0,0,0,0.3)]"
+        >
+          <h2 class="font-raleway text-lg font-bold tracking-wider">
+            Get early access today
+          </h2>
+          <p class="text-center font-open-sans">
+            It only takes a minute to sign up and our free tier is extremely
+            generous. If you have any questions, our support team would be happy
+            to help you.
+          </p>
+          <form class="flex w-full flex-col gap-4">
+            <label for="email">Email</label>
+            <input
+              class="w-full rounded-full py-4 placeholder:pl-8 placeholder:text-xs"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+            <button
+              class="rounded-full bg-gradient-to-br from-accent-cyan to-accent-blue py-3"
+              type="submit"
+            >
+              Get Started For Free
+            </button>
+          </form>
+        </div>
+        <div class="-mt-14 flex flex-col gap-6">
+          <NuxtImg class="h-14 w-max" src="/logo.svg" alt="" />
+          <ul class="flex flex-col gap-4 p-6 *:pl-3">
+            <li class="list-image-[url(~/assets/images/icon-location.svg)]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatem possimus molestiae quas sequi voluptatum repellendus
+              ipsa, minus corporis cupiditate!
+            </li>
+            <li class="list-image-[url(~/assets/images/icon-phone.svg)]">
+              +1-543-123-4567
+            </li>
+            <li class="list-image-[url(~/assets/images/icon-email.svg)]">
+              example@fylo.com
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-12 pt-14 font-open-sans">
+          <ul class="flex flex-col gap-4 text-lg">
+            <li>About Us</li>
+            <li>Jobs</li>
+            <li>Press</li>
+            <li>Blog</li>
+          </ul>
+          <ul class="flex flex-col gap-4 text-lg">
+            <li>Contact Us</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+          <ul class="flex gap-4 self-center pt-10">
+            <li>
+              <IconsFacebook class="h-8 w-max rounded-full border p-1.5" />
+            </li>
+            <li>
+              <IconsTwitter class="h-8 w-max rounded-full border p-1.5" />
+            </li>
+            <li>
+              <IconsInstagram class="h-8 w-max rounded-full border p-1.5" />
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </main>

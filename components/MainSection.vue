@@ -1,7 +1,7 @@
 <template>
-  <section
-    class="flex w-full flex-col items-center bg-primary-main-dark-blue p-6"
-  >
-    <slot />
+  <section class="w-full bg-primary-main-dark-blue">
+    <div class="container mx-auto flex flex-col items-center p-6">
+      <slot />
+    </div>
   </section>
 </template>
