@@ -192,25 +192,65 @@ useHead({
             class="flex flex-col gap-12 pt-14 font-open-sans md:flex-row md:gap-x-40 md:pt-0"
           >
             <ul class="flex flex-col gap-4 text-lg text-white/80">
-              <li>About Us</li>
-              <li>Jobs</li>
-              <li>Press</li>
-              <li>Blog</li>
+              <li>
+                <a class="transition ease-in-out hover:text-white" href="/"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a class="transition ease-in-out hover:text-white" href="/"
+                  >Jobs</a
+                >
+              </li>
+              <li>
+                <a class="transition ease-in-out hover:text-white" href="/"
+                  >Press</a
+                >
+              </li>
+              <li>
+                <a class="transition ease-in-out hover:text-white" href="/"
+                  >Blog</a
+                >
+              </li>
             </ul>
             <ul class="flex flex-col gap-4 text-lg text-white/80">
-              <li>Contact Us</li>
-              <li>Terms</li>
-              <li>Privacy</li>
+              <li>
+                <a class="transition ease-in-out hover:text-white" href="/"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a class="transition ease-in-out hover:text-white" href="/"
+                  >Terms</a
+                >
+              </li>
+              <li>
+                <a class="transition ease-in-out hover:text-white" href="/"
+                  >Privacy</a
+                >
+              </li>
             </ul>
             <ul class="flex gap-4 self-center pt-10 md:self-start md:pt-0">
               <li>
-                <IconsFacebook class="h-8 w-max rounded-full border p-1.5" />
+                <a href="facebook.com">
+                  <IconsFacebook
+                    class="h-8 w-max rounded-full border fill-white p-1.5 transition ease-in-out hover:border-accent-cyan hover:fill-accent-cyan"
+                  />
+                </a>
               </li>
               <li>
-                <IconsTwitter class="h-8 w-max rounded-full border p-1.5" />
+                <a href="twitter.com">
+                  <IconsTwitter
+                    class="h-8 w-max rounded-full border fill-white p-1.5 transition ease-in-out hover:border-accent-cyan hover:fill-accent-cyan"
+                  />
+                </a>
               </li>
               <li>
-                <IconsInstagram class="h-8 w-max rounded-full border p-1.5" />
+                <a href="instagram.com">
+                  <IconsInstagram
+                    class="h-8 w-max rounded-full border fill-white p-1.5 transition ease-in-out hover:border-accent-cyan hover:fill-accent-cyan"
+                  />
+                </a>
               </li>
             </ul>
           </div>
