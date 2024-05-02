@@ -79,10 +79,12 @@ useHead({
           for live collaboration. No email attachments required.
         </p>
         <button
-          class="flex items-center gap-2 self-start border-b border-accent-cyan py-1 font-open-sans text-accent-cyan"
+          class="group flex items-center gap-2 self-start border-b border-accent-cyan py-1 font-open-sans text-accent-cyan transition ease-in-out hover:border-white hover:text-white"
         >
           See how Fylo works
-          <NuxtImg class="h-4 w-max" src="/images/icon-arrow.svg" alt="" />
+          <IconsArrowRight
+            class="h-5 w-max rounded-full bg-accent-cyan p-1 transition ease-in-out group-hover:bg-white group-hover:fill-primary-main-dark-blue"
+          />
         </button>
       </div>
     </MainSection>
