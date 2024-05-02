@@ -4,25 +4,23 @@
   >
     <div class="container mx-auto flex flex-col items-center gap-8 text-center">
       <NuxtImg
-        class="absolute bottom-[24rem] w-full md:hidden"
-        src="/bg-curvy-mobile.svg"
+        class="absolute bottom-0 w-full md:hidden"
+        src="/images/bg-curvy-mobile.svg"
         alt=""
       />
       <NuxtImg
         class="absolute bottom-0 hidden w-full md:block"
-        src="/bg-curvy-desktop.svg"
+        src="/images/bg-curvy-desktop.svg"
         alt=""
       />
       <NuxtImg
         fetchpriority="high"
         preload
-        class="relative min-h-max w-full p-8 md:max-w-6xl"
-        src="/illustration-intro.png"
+        class="relative min-h-max w-full p-8 md:max-w-3xl"
+        src="/images/illustration-intro.png"
         alt="People carrying document into file illustration."
       />
-      <div
-        class="relative mt-12 bg-primary-main-dark-blue p-8 md:max-w-6xl md:bg-transparent"
-      >
+      <div class="mt-12p-8 relative md:max-w-6xl md:bg-transparent">
         <div class="flex -translate-y-24 flex-col items-center gap-8">
           <h1
             class="text-center font-raleway text-[1.6rem] font-bold leading-relaxed tracking-wide text-white md:text-5xl md:leading-snug"

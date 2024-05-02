@@ -2,13 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "@nuxt/image", ["@nuxtjs/google-fonts", {
+    preload: true,
     families: {
       Raleway: [400, 700],
       'Open Sans': [400, 700]
     }
   }]],
   image: {
-    dir: 'assets/images',
+    format: ['avif', 'webp'],
     quality: 70,
   },
   tailwindcss: {
