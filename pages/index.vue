@@ -157,9 +157,12 @@ useHead({
               placeholder="email@example.com"
             />
             <button
-              class="rounded-full bg-gradient-to-br from-accent-cyan to-accent-blue py-2 md:min-w-64"
+              class="group relative overflow-clip rounded-full bg-gradient-to-br from-accent-cyan to-accent-blue py-2 md:min-w-64"
               type="submit"
             >
+              <div
+                class="absolute inset-0 z-10 bg-white/30 opacity-0 transition ease-in-out group-hover:opacity-100"
+              />
               Get Started For Free
             </button>
           </form>
