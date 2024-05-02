@@ -33,9 +33,12 @@
             family, and co-workers.
           </p>
           <button
-            class="w-max rounded-full bg-gradient-to-br from-accent-cyan to-accent-blue px-20 py-4 font-open-sans font-bold"
+            class="group relative w-max overflow-clip rounded-full bg-gradient-to-br from-accent-cyan to-accent-blue px-20 py-4 font-open-sans font-bold"
             type="button"
           >
+            <div
+              class="absolute left-0 top-0 z-10 size-full bg-white/30 opacity-0 transition ease-in-out group-hover:opacity-100"
+            />
             Get Started
           </button>
         </div>
